@@ -2,7 +2,7 @@ async function getChatResponse(message) {
   const prompt = `${message}\n`;
   const maxTokens = 50;
   const apiKey = "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";
-  const apiUrl = "https://api.openai.com/v1/engines/davinci-codex/completions";
+  const apiUrl = "https://api.openai.com/v1/completions";
 
   try {
     const response = await fetch(apiUrl, {
